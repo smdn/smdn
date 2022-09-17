@@ -1,0 +1,34 @@
+function __prompt_add_env_name()
+{
+  if [ -n "$_PROMPT_ENV_NAME" ]; then
+    _PROMPT_ENV_NAME="$_PROMPT_ENV_NAME|$1"
+  else
+    _PROMPT_ENV_NAME="$1"
+  fi
+}
+
+function __prompt_set_env_name()
+{
+  _PROMPT_ENV_NAME=""
+
+  # Mono
+  if [ -n "$MONO_PREFIX" ]; then
+    __prompt_add_env_name "Mono:$MONO_PREFIX"
+  fi
+
+  # .NET
+  if [ -n "$DOTNET_ROOT" ]; then
+    __prompt_add_env_name ".NET:$DOTNET_ROOT"
+  fi
+
+  # Visual Studio Code
+  if [ -n "$VSCODE_INTEGRATED_TERMINAL" ]; then
+    __prompt_add_env_name "VSCode"
+  fi
+
+  # Platform IO
+  if [ -n "$PLATFORMIO_IDE" ]; then
+    __prompt_add_env_name "PlatformIO $PLATFORMIO_IDE"
+  fi
+}
+
