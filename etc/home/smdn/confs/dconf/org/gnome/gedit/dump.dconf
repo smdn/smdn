@@ -1,0 +1,26 @@
+[plugins]
+active-plugins=['git', 'drawspaces']
+
+[plugins/drawspaces]
+draw-spaces=['space', 'tab', 'nbsp', 'leading', 'text', 'trailing']
+
+[preferences/editor]
+auto-indent=true
+background-pattern='none'
+bracket-matching=true
+display-line-numbers=true
+display-overview-map=true
+display-right-margin=false
+editor-font='Noto Sans Mono CJK JP 11'
+highlight-current-line=true
+insert-spaces=true
+scheme='oblivion'
+tabs-size=uint32 2
+use-default-font=true
+wrap-last-split-mode='word'
+
+[preferences/ui]
+bottom-panel-visible=false
+show-tabs-mode='auto'
+side-panel-visible=false
+statusbar-visible=true

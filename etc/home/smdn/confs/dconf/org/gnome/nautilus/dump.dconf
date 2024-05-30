@@ -1,0 +1,16 @@
+[desktop]
+volumes-visible=false
+
+[list-view]
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
+default-visible-columns=['name', 'size', 'date_modified_with_time']
+default-zoom-level='small'
+use-tree-view=true
+
+[preferences]
+always-use-location-entry=true
+default-folder-viewer='list-view'
+executable-text-activation='ask'
+fts-default=false
+search-filter-time-type='last_modified'
+search-view='list-view'
