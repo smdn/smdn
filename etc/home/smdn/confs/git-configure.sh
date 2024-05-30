@@ -19,17 +19,15 @@ git config --global core.autocrlf input
 git config --global core.safecrlf true
 git config --global core.ignorecase false
 git config --global core.quotepath false
-git config --global core.ignorecase false
 
+# push
 git config --global push.default simple
+
+# pull
 git config --global pull.ff only
 
 # diff
 git config --global diff.noprefix true
-
-# push/pull
-git config --global push.default simple
-git config --global pull.ff only
 
 # color
 git config --global color.ui true
