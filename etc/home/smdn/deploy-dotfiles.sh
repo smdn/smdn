@@ -22,7 +22,7 @@ if [ $? -eq 0 ]; then
 fi
 
 # deploy git-prompt.sh
-curl -L https://raw.githubusercontent.com/git/git/e03acd0d4ad75115f454041fac3300ae796f108f/contrib/completion/git-prompt.sh --output ${HOME}/.git-prompt.sh
+curl -L https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh --output ${HOME}/.git-prompt.sh
 
 # copy dotfiles to ${HOME}/.config
 if [ $EUID -ne 0 ]; then
