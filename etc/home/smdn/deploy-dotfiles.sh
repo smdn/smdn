@@ -11,9 +11,11 @@ ${COPY} \
   ${basedir}/.bash_envname \
   ${HOME}
 
-# apply patch to ~/.bashrc
+# copy .bashrc from /etc/skel and apply the patch
 PATCH_FILE_BASHRC=${basedir}/.bashrc.ubuntu-desktop.patch
 PATCH_ARGS_BASHRC="--directory=${HOME} --forward --backup-if-mismatch --suffix=${backup_suffix}"
+
+cp --force --backup=numbered /etc/skel/.bashrc ${HOME}/.bashrc
 
 patch --dry-run ${PATCH_ARGS_BASHRC} < ${PATCH_FILE_BASHRC}
 
