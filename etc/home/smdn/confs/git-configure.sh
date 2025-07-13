@@ -22,12 +22,26 @@ git config --global core.quotepath false
 
 # push
 git config --global push.default simple
+git config --global push.autoSetupRemote true
 
 # pull
 git config --global pull.ff only
 
+# fetch
+git config --global fetch.prune true
+git config --global fetch.pruneTags true
+git config --global fetch.all true
+
 # diff
 git config --global diff.noprefix true
+git config --global diff.algorithm histogram
+git config --global diff.colorMoved no
+git config --global diff.mnemonicPrefix true
+git config --global diff.renames true
+
+# rerere
+git config --global rerere.enabled true
+git config --global rerere.autoupdate true
 
 # color
 git config --global color.ui true
@@ -38,6 +52,7 @@ git config --global color.diff.new "bold green"
 
 # aliases
 git config --global alias.logg "log --graph --all --date=iso --pretty=format:'%C(bold red)%h %C(bold green)%cd %C(bold magenta)[%G?]%C(bold yellow)%cn%Creset%x09%C(bold cyan)%d%Creset %s'"
+git config --global alias.loga "log --graph --all --date=iso --pretty=format:'%C(bold red)%h %C(bold blue)%ad %C(bold magenta)[%G?]%C(bold yellow)%cn%Creset%x09%C(bold cyan)%d%Creset %s'"
 git config --global alias.logd "log --name-status --all --date=iso-strict --pretty=format:'%C(bold green)%cd %C(bold yellow)%cn <%ce> %C(bold red)%H%n%C(bold magenta)%GG%n%C(bold cyan)%D%n%B'"
 git config --global alias.tags "!f () { pattern=refs/tags/\$1; git for-each-ref --sort=taggerdate --format='%(color:bold red)%(objectname:short) %(color:bold green)%(taggerdate:iso) %(color:bold cyan)%(align:72)%(refname:short)%(end) %(color:bold yellow)%(taggername) %(color:reset)%(subject)' \$pattern; }; f"
 git config --global alias.aliases '!git config --get-regexp "^alias\." | sed "s/alias\.\([^ ]*\) \(.*\)/\1\t => \2/"'
@@ -46,7 +61,7 @@ git config --global alias.difff "diff --word-diff-regex='.' -U0"
 git config --global alias.diffw "diff --word-diff"
 
 # Windows specific configurations
-if [[ -n "$USERPROFILE"  ]]; then
+if [[ -n "$USERPROFILE" ]]; then
   git config --global sendpack.sideband false
   git config --global core.symlinks true
 fi
