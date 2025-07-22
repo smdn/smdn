@@ -22,7 +22,7 @@ function __prompt_set_env_name()
   fi
 
   # Visual Studio Code
-  if [ -n "$VSCODE_INTEGRATED_TERMINAL" ]; then
+  if [ "${TERM_PROGRAM}" == "vscode" ] || [ -n "$VSCODE_INTEGRATED_TERMINAL" ]; then
     __prompt_add_env_name "VSCode"
   fi
 
