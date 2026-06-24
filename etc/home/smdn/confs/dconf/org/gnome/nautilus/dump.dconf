@@ -9,8 +9,11 @@ use-tree-view=true
 
 [preferences]
 always-use-location-entry=true
+date-time-format='detailed'
 default-folder-viewer='list-view'
-executable-text-activation='ask'
-fts-default=false
+fts-enabled=false
+recursive-search='local-only'
 search-filter-time-type='last_modified'
 search-view='list-view'
+show-directory-item-counts='local-only'
+show-image-thumbnails='local-only'

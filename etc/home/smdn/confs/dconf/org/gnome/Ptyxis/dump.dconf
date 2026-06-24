@@ -1,0 +1,12 @@
+[/]
+default-columns=uint32 140
+default-profile-uuid='2071a0869bbf98ca6e6f660b6a39da0b'
+default-rows=uint32 20
+profile-uuids=['2071a0869bbf98ca6e6f660b6a39da0b']
+restore-session=false
+restore-window-size=false
+
+[Profiles/2071a0869bbf98ca6e6f660b6a39da0b]
+opacity=0.80
+palette='gnome'
+scroll-on-output=true

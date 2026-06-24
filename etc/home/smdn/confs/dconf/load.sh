@@ -8,5 +8,5 @@ for file in `find ${basedir} -name "${dconf_dump_file}"` ; do
 
   echo "loading dconf '${dconf_dir_path}' from the file '$file'"
 
-  dconf load ${dconf_dir_path} < "$file"
+  sed "s/\$USER/${USER}/g" "$file" | dconf load ${dconf_dir_path}
 done

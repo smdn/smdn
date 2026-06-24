@@ -1,8 +1,8 @@
 [plugins]
-active-plugins=['git', 'drawspaces']
+active-plugins=['drawspaces']
 
 [plugins/drawspaces]
-draw-spaces=['space', 'tab', 'nbsp', 'leading', 'text', 'trailing']
+draw-spaces=[uint32 10, 10, 10]
 
 [preferences/editor]
 auto-indent=true
@@ -15,6 +15,9 @@ editor-font='Noto Sans Mono CJK JP 11'
 highlight-current-line=true
 insert-spaces=true
 scheme='oblivion'
+style-scheme-for-dark-theme-variant='oblivion'
+style-scheme-for-light-theme-variant='tango'
+syntax-highlighting=true
 tabs-size=uint32 2
 use-default-font=true
 wrap-last-split-mode='word'

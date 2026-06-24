@@ -1,18 +1,27 @@
 [background]
 color-shading-type='solid'
 picture-options='zoom'
+picture-uri='file:///home/$USER/Pictures/wallpaper/default.jpg'
+picture-uri-dark='file:///home/$USER/Pictures/wallpaper/default-dark.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
+show-desktop-icons=true
 
 [input-sources]
 per-window=false
 show-all-sources=true
+mru-sources=[('ibus', 'mozc-jp'), ('xkb', 'jp')]
+sources=[('ibus', 'mozc-jp'), ('xkb', 'jp')]
 
 [interface]
+clock-format='24h'
+clock-show-date=true
 clock-show-seconds=true
 clock-show-weekday=true
 color-scheme='prefer-dark'
-cursor-blink-time=551
+cursor-blink=true
+cursor-blink-time=500
+cursor-blink-timeout=10
 cursor-size=24
 document-font-name='Noto Serif CJK JP Ultra-Light 11'
 font-hinting='slight'
@@ -27,13 +36,18 @@ text-scaling-factor=1.0
 [peripherals/keyboard]
 delay=uint32 273
 numlock-state=true
+remember-numlock-state=true
+repeat=true
 repeat-interval=uint32 27
 
 [peripherals/touchpad]
 two-finger-scrolling-enabled=true
 
 [session]
-idle-delay=uint32 600
+idle-delay=uint32 3600
 
 [wm/preferences]
+font-name='Noto Sans CJK JP Thin 11'
 mouse-button-modifier='<Alt>'
+num-workspaces=4
+titlebar-font='Noto Sans CJK JP Thin 11'
