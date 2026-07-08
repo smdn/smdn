@@ -15,3 +15,4 @@ set number
 set showmatch
 set ruler
 set smartindent
+set mouse=
