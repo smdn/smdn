@@ -4,6 +4,6 @@
 [![smdn.jp](https://img.shields.io/website?style=flat&label=smdn.jp&url=https%3A%2F%2Fsmdn.jp%2F)](https://smdn.jp/)
 
 <div style="display: grid;">
- <img style="display: block;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smdn&layout=compact&border_radius=3&theme=nord" />
- <img align="display: block;" src="https://github-readme-stats.vercel.app/api?username=smdn&hide_rank=true&hide_title=true&show_icons=true&disable_animations=true&border_radius=3&theme=nord" />
+ <img style="display: block;" src="https://github-stats-extended.vercel.app/api/top-langs/?username=smdn&layout=compact&border_radius=3&theme=nord" />
+ <img align="display: block;" src="https://github-stats-extended.vercel.app/api?username=smdn&hide_rank=true&hide_title=true&show_icons=true&disable_animations=true&border_radius=3&theme=nord" />
 </div>
